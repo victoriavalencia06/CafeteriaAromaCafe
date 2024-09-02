@@ -507,12 +507,6 @@ textarea {
 }
 
 /*Diseño del menu de platillos*/
-.gallerymenu-content{
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border: 2px solid black;
-}
-
 div.gallery {
   border: 1px solid #ccc;
 }
