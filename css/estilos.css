@@ -214,9 +214,11 @@ body {
 
 .coffe-content h2 {
     font-size: 35px;
-    line-height: 70px;
+    line-height: 40px;
     color: #323337;
-    margin-bottom: 15px;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto 15px auto;
 }
 
 .txt-p {
@@ -261,12 +263,12 @@ body {
     background-image: linear-gradient( 
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)),
-        url(../images/bg2.jpg);
+        url(../images/fondobg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; 
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .services-content {
@@ -277,7 +279,9 @@ body {
     font-size: 35px;
     line-height: 70px;
     color: #f9fafc;
-    margin-bottom: 35px;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto 35px auto;
 }
 
 .services-content p{
@@ -293,7 +297,7 @@ body {
     margin-bottom: 50px;
 }
 
-services-1 {
+.services-1 {
     padding: 0 100px;
 }
 
@@ -644,7 +648,7 @@ hr {
     }
 
     .services {
-        padding: 30px;
+        padding: 15px;
     }
 
     .services-content p {
@@ -653,11 +657,15 @@ hr {
 
     .services-group {
         flex-direction: row;
-        margin-bottom: 0;
+        margin-bottom: 15px;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .services-1 {
-        margin: 10px;
+        margin: 0 auto;
+        padding: 10px 0;
+        text-align: center;
     }
 
     .footer {
