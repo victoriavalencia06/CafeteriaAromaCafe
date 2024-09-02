@@ -83,7 +83,7 @@ body {
 .hero-text {
     text-align: center;
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -40%);
     color: #fff;
@@ -364,6 +364,7 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 
 .btn-info2 {
@@ -507,24 +508,70 @@ textarea {
 }
 
 /*Diseño del menu de platillos*/
-div.gallery {
-  border: 1px solid #ccc;
+.gallery-container {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    flex-wrap: wrap; /* Permite que las galerías se ajusten en varias filas */
+    justify-content: space-between; /* Centra las galerías */
+    margin: 0 auto;
+}
+.gallery {
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: #aaa 5px 3px 2px;
+    cursor: default;
+    transition: all 400ms ease;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+.gallery:hover{
+    box-shadow: #ccc 5px 5px 20px;
+    transform: translateY(-3%);
 }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
+.gallery img {
+    width: 100%;
+    height: 210px;
 }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
+.gallery .gallery-desc {
+    padding: 15px;
+    text-align: center;
 }
 
+.gallery .gallery-desc p {
+    color: #6a6a6a;
+    text-align: justify;
+}
+
+.gallery .gallery-desc h3 {
+    margin-bottom: 10px;
+}
+/*.gallery-container {
+    display: flex;
+    flex-wrap: wrap;*/ /* Permite que los elementos se envuelvan a la siguiente fila */
+/*justify-content: center;*/ /* Centra las galerías dentro del contenedor */
+/*max-width: 1100px;
+    margin: 0 auto;
+}
+
+.gallery {
+    width: calc(33.333% - 40px);
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0,2);
+}
+.gallery img {
+    width: 100%;
+    height: auto;*/ /* Mantiene la proporción de la imagen */
+/*display: block;
+}*/
+/*
 * {
   box-sizing: border-box;
 }
@@ -533,8 +580,7 @@ div.desc {
   padding: 0 6px;
   float: none;
   width: 24.99999%;
-}
-
+}*/
 /* Estilos para el contenedor de la sección */
 .section-container {
     margin: 20px auto;
@@ -711,5 +757,10 @@ hr {
         content: "";
         display: table;
         clear: both;
+    }
+
+    /*media query para pantallas pequeñas en el menu*/
+    .gallery {
+        width: calc(100% - 20px); /* Un elemento por fila en pantallas muy pequeñas */
     }
 }
