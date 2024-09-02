@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <script src="https://kit.fontawesome.com/48da59fe5b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="../index.html" class="logo">Aroma Cafe</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="../images/menu.png" class="menu-icono" alt="logo" />
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="horarios.html">Horarios</a></li>
+                    <li><a href="ubicacion.html">Ubicación</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contacto-image">
+            <div class="contacto-text">
+                <h1 style="font-size:50px">Contacto</h1>
+                <p>
+                    Estamos comprometidos a brindarte la mejor experiencia posible.
+                    Ya sea que necesites asistencia con tu pedido, tengas alguna sugerencia,
+                    o simplemente quieras compartir tu experiencia con nosotros
+                </p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-form">
+            <div class="info-form">
+                <h2>¿Como te podemos ayudar el dia de hoy?</h2>
+            </div>
+            <form action="#" autocomplete="off">
+                <select id="slContacto" required>
+                    <option value="" disabled selected>Selecciona tu razon de contacto</option>
+                    <option value="Servicio al cliente">Servicio al cliente</option>
+                    <option value="Quejas o reclamos">Quejas o reclamos</option>
+                    <option value="Ayuda con los pedidos">Ayuda con los pedidos</option>
+                </select>
+                <br />
+                <br />
+
+                <label>Nombre:</label>
+                <br />
+                <input type="text" id="txtNombre" required />
+                <br />
+                <br />
+
+                <label>Correo:</label>
+                <br />
+                <input type="email" id="txtCorreo" required />
+                <br />
+                <br />
+
+                <label>Teléfono:</label>
+                <br />
+                <input type="tel" id="txtTelefono" required />
+                <br />
+                <br />
+
+                <label>Comentarios:</label>
+                <br />
+                <textarea id="txtComentarios" rows="3" cols="60" required></textarea>
+                <br />
+                <br />
+
+                <button type="submit" class="btn-enviar">Enviar mensaje</button>
+            </form>
+        </div>
+        <hr />
+        <div class="contact-container">
+            <h2>Contacto directo</h2>
+
+            <a href="#"><i class="fa-solid fa-phone"></i>7610-6120</a>
+            <a href="#"><i class="fa-solid fa-envelope"></i>aromacafe.sv1@gmail.com</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <ul>
+                    <li>&copy; Aroma Cafe 2024</li>
+                    <li><a href="acercade.html">Acerca de Nosotros</a></li>
+                    <li><a href="contacto.html">Contactenos </a></li>
+                    <li><a href="ubicacion.html">Ubicación</a></li>
+                    <li><a href="horarios.html">Horarios</a></li>
+                </ul>
+                <a href="https://www.facebook.com/aromacafesv/?locale=es_LA"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            </div>
+            <div class="footer-logo">
+                <img src="../images/logo.jpg" alt="Logo Aroma cafe" />
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
